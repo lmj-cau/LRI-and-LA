@@ -14,4 +14,4 @@ The dataset can be downloaded from the following link:
 
 | Dataset | Drive(Google) | Size |
 |---------|--------------|------|
-| Maize   | [Download link]([https://docs.google.com/forms/d/e/1FAIpQLSf-XXJsTLaxhjt9Yj6P7dBl_dyrmK1TigCTkMPytzFntNSx9A/viewform?usp=dialog]) | approx. 300MB |
+| Maize   | [Download link](https://docs.google.com/forms/d/e/1FAIpQLSf6YyEx3GdvLoFXmebF1eK_mAL0brJ5FD6u3SaiJ4KS17cRDg/viewform?usp=sharing&ouid=108525920521546480794) | approx. 300MB |
