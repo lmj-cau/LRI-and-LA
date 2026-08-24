@@ -1,18 +1,18 @@
-﻿#include <vector>   //可以跑下垂圆柱分割、等距分割
-#include <pcl/point_types.h>  //
-#include <pcl/io/pcd_io.h>  //点云数据输入输出模块
+﻿#include <vector>   
+#include <pcl/point_types.h>  
+#include <pcl/io/pcd_io.h>  
 #include <pcl/kdtree/kdtree_flann.h>
 #include <pcl/surface/mls.h>
-#include <pcl/visualization/cloud_viewer.h>  //点云显示
-#include <pcl/visualization/pcl_visualizer.h>  //点云显示
+#include <pcl/visualization/cloud_viewer.h>  
+#include <pcl/visualization/pcl_visualizer.h>  
 #include <boost/thread/thread.hpp>
-#include <pcl/sample_consensus/method_types.h>   //随机参数估计方法头文件
-#include <pcl/sample_consensus/model_types.h>    //模型定义头文件
-#include <pcl/segmentation/sac_segmentation.h>   //基于采样一致性分割的类的头文件
+#include <pcl/sample_consensus/method_types.h>   
+#include <pcl/sample_consensus/model_types.h>    
+#include <pcl/segmentation/sac_segmentation.h>   
 #include <pcl/features/normal_3d.h>
 #include <pcl/filters/extract_indices.h>
-#include <pcl/filters/passthrough.h>		//直通滤波
-#include <pcl/filters/statistical_outlier_removal.h>  //统计滤波去除离群点
+#include <pcl/filters/passthrough.h>	
+#include <pcl/filters/statistical_outlier_removal.h>  
 #include <cmath> 
 #include <iostream>
 #include <iomanip>
@@ -25,7 +25,7 @@
 using namespace std;
 typedef pcl::PointXYZ PointT;
 
-#define Fb1 0.02  //设置的分割间隔，后面分割间隔 H 和 H0 直接用Fb1赋值，就方便了
+#define Fb1 0.02  //设置的分割间隔，后面分割间隔 H 和 H0 直接用Fb1赋值
 #define Fb2 0.0008//设置截取叶片点云的宽度
 #define Fb3 0.02 //等距分割的距离间隔
 int pm = 2;  //1选择重心点  2选择几何中心点
@@ -126,7 +126,7 @@ int main(int argc, char** argv)
 				//找出那一个点坐标z，将这一点center1存入cloud_a_point点中，方便显示
 				center1.z = mind1.z - 0.01;
 				cloud_a_point->points.push_back(center1);
-				//显示那个一点cloud_a_point，好像不设置点云宽度、高度、稠密也行
+				//显示那个一点cloud_a_point
 				pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> point_color(cloud_a_point, 255, 0, 0);
 				viewer1->addPointCloud<pcl::PointXYZ>(cloud_a_point, point_color, "point_color");
 				viewer1->setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 4, "point_color");
