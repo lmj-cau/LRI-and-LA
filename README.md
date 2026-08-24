@@ -1,6 +1,8 @@
 # Statement
-
-
+This study addresses the challenge of precisely quantifying maize leaf morphological responses to drought stress. Leveraging 3D point cloud data, we developed an automated pipeline to overcome the subjective bias and local errors inherent in traditional phenotyping methods. Our key innovations and findings include:
+Comprehensive Pipeline: We established a robust workflow extracting fine structural features from maize populations down to individual leaves under varying drought stress levels.
+Novel Leaf Rolling Index: We propose the multi-point measurement-based midday actual leaf rolling index. It accurately quantifies the leaf rolling degree with exceptional grade distinctiveness.
+Novel Leaf Inclination Parameter: We introduce the average segment leaf inclination angle variation. This metric reliably captures spatial posture adjustments driven by water deficits, overcoming the inconsistencies of traditional basal measurements
 
 # Code
 Part of the core code has been uploaded, but the full code will be uploaded after the paper has been accepted
